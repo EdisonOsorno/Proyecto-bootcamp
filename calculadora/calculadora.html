@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <meta charset="UTF-8">
+  <title>Calculadora de Reducción de Homicidios</title>
+   <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="topnav">
+  <a href="../index.html">Inicio</a>
+  <a href="../casos reales/casos.html">Casos Reales</a>
+  <a href="../estadisticas/estadisticas.html">Estadísticas</a>
+  <a href="../contactenos/contacto.html">Contáctenos</a>
+</nav>
+ 
+  <header>
+    <h1>Ojo Digital</h1>
+  </header>
+  
+   <!-- Sección 1: Robos -->
+  <section>
+    <h2>Reducción de Robos a Mano Armada</h2>
+    <label>Población:</label>
+    <input type="number" id="poblacionRobos" placeholder="Ej: 2600000" required>
+
+    <label>Casos actuales de robo:</label>
+    <input type="number" id="casosRobos" placeholder="Ej: 21079" required>
+
+    <label>Cámaras a instalar:</label>
+    <input type="number" id="camarasRobos" placeholder="Ej: 638" required>
+
+    <button onclick="calcularRobos()">Calcular Reducción</button>
+    <p class="resultado" id="resultadoRobos"></p>
+  </section>
+
+  <!-- Sección 2: Homicidios -->
+  <section>
+    <h2>Reducción de Homicidios</h2>
+    <label>Casos actuales de homicidio:</label>
+    <input type="number" id="casosHomicidios" placeholder="Ej: 632" required>
+
+    <label>Cámaras a instalar:</label>
+    <input type="number" id="camarasHomicidios" placeholder="Ej: 638" required>
+
+    <button onclick="calcularHomicidios()">Calcular Reducción</button>
+    <p class="resultado" id="resultadoHomicidios"></p>
+  </section>
+
+  <!-- Sección 3: Accidentes de tránsito -->
+  <section>
+    <h2>Reducción de Accidentes de Tránsito</h2>
+    <label>Casos actuales de accidentes:</label>
+    <input type="number" id="casosAccidentes" placeholder="Ej: 38702" required>
+
+    <label>Cámaras a instalar:</label>
+    <input type="number" id="camarasAccidentes" placeholder="Ej: 558" required>
+
+    <button onclick="calcularAccidentes()">Calcular Reducción</button>
+    <p class="resultado" id="resultadoAccidentes"></p>
+  </section>
+</body>
+<footer class="footer">
+  <span class="left"><b>Copyright 2025</b></span>
+
+  <span class="right">Realizado por: Equipo Ojo Digital</span>
+</footer>
+</html>
