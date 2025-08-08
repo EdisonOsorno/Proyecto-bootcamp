@@ -16,7 +16,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(51, 153, 204, 0.8); /* azul translúcido */
+  background-color: rgba(51, 153, 204, 0.8);
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -24,6 +24,7 @@
   padding: 15px 0;
   backdrop-filter: blur(6px);
   box-shadow: var(--shadow);
+  width: 100%;
 }
 
 .topnav a {
@@ -177,6 +178,17 @@ button:hover {
 /* RESPONSIVE */
 
 @media screen and (max-width: 768px) {
+  .topnav {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .topnav a {
+    width: 90%;
+    text-align: center;
+    font-size: 18px;
+  }
   header h1 {
     font-size: 1.8rem;
   }
